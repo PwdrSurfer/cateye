@@ -13,12 +13,20 @@ red - ff0000
 .cateye-logo {
   float:left;
   display: block;
+  width: 93px;
 }
 
 .art-of-ride {
   margin: 20px 0px 50px 0px;
 }
 
+/* header responsive */
+@media screen and (max-width: 768px) {
+  .cateye-logo {
+    float:none;
+    margin: auto;
+  }
+}
 /* -- General Styles -- */
 .display {
   display: block;
@@ -38,11 +46,17 @@ red - ff0000
 .social a {
   font-size: 45px;
   color: #030000;
-  margin: 32px 0px 0px 45px;
+  margin: 32px 45px 0px 0px;
 }
 
 .social a:hover{
   color: #ff0000;
+}
+
+.city-select-btn {
+  width: 192px;
+  margin: 20px;
+  display: block;
 }
 
 .ride-the-route-btn {
@@ -71,7 +85,7 @@ red - ff0000
   background-color: #ff0000 !important;
 }
 
-/* responsive */
+/* general responsive */
 @media screen and (max-width: 768px) {
   .social {
     float:none !important;
@@ -87,6 +101,11 @@ red - ff0000
     margin-right: 20px;
   }
 
+  .city-select-btn {
+    float:none !important;
+    margin: 20px auto;
+  }
+
   .display {
     display: none;
   }
@@ -98,6 +117,24 @@ red - ff0000
   background: url("imgs/brush-stroke.png") no-repeat -150px 100px;
 }
 
+.visit-instagram-bg {
+  background: url("imgs/brush-stroke2.png") no-repeat right -200px;
+}
+/* brush stroke backgrounds responsive */
+@media screen and (max-width: 990px) {
+  .artist-riders-bg {
+    background: url("imgs/brush-stroke.png") no-repeat -150px 225px;
+  }
+
+  .visit-instagram-bg {
+    background: url("imgs/brush-stroke2.png") no-repeat right -200px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .artist-riders-bg {
+    background: none;
+  }
+}
 /* -- Containers -- */
 .content-wrap {
   padding: 80px 0px 0px 0px;
@@ -108,11 +145,7 @@ red - ff0000
 }
 
 .art-of-the-ride-spacer {
-  margin-bottom: 80px;
-}
-
-.visit-instagram-bg {
-  background: url("imgs/brush-stroke2.png") no-repeat right -200px;
+  margin-bottom: 80px !important;
 }
 
 .visit-instagram {
