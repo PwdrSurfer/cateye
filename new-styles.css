@@ -59,10 +59,18 @@ red - ff0000
   display: block;
 }
 
+.city-select-btn:hover {
+
+}
+
 .ride-the-route-btn {
   background-color: #ff0000;
   position: relative;
   top: -150px;
+}
+
+#slider-arrow-left, #slider-arrow-right, .camera_prev, .camera_next, #slider .owl-prev, #slider .owl-next, .flex-prev, .flex-next, .nivo-prevNav, .nivo-nextNav, .slider-arrow-top-sm, .slider-arrow-bottom-sm {
+  background-color: transparent !important;
 }
 
 .button-3d.button-red:hover, .button-reveal.button-red:hover{
